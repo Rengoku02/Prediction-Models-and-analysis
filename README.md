@@ -1,6 +1,15 @@
 # Prediction-Models-and-analysis
 
-## INTRODUCTION
+## Table of content
+
+- [Introduction](#introduction)
+- [Dataset Used](#dataset-used)
+- [Data Preprocessing](data-preprocessing)
+- [Exploratory Data Analysis (EDA)](exploratory-data-analysis-(eda))
+- 
+
+
+## Introduction
 
 In this study, we will examine a dataset including information on individuals with and without diabetes that was released by the National Institute of Diabetes and Digestive and Kidney Diseases in the United States. The objective here is to use the data to decide as to whether or not a certain patient suffers from diabetes. A thorough technique including data cleaning, exploratory data analysis, feature engineering, model selection and assessment, and interpretation will be used to accomplish this aim.
 
