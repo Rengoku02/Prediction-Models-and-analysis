@@ -80,5 +80,46 @@ iplot(fig)
 
 ![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/5dc61528-2394-4eed-a879-9385c255872b)
 
+## Prediction Models
+
+Algorithms used for data analysis and prediction are known as prediction models. Numerous industries, including business, medicine, marketing, and others, make extensive use of these models. A prediction model's primary function is to reliably foretell future outcomes using existing data.
+```python
+random_state = 42
+models = [GaussianNB(), 
+          DecisionTreeClassifier(random_state = random_state),
+          SVC(random_state = random_state, probability = True),
+          RandomForestClassifier(random_state = random_state),
+          LogisticRegression(random_state = random_state),
+          GradientBoostingClassifier(random_state = random_state),
+for model in models:
+model_performance(model)
+```
+- The aforementioned code is used to compare the accuracy of 10 different diabetes categorization models. Cross-validation is used to assess the models' efficacy once they have been instantiated using the default hyperparameters.
+
+### Gaussian Naive Bayes:
+
+![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/ff02f1ce-369b-4274-9baf-0b000d96e084)
+
+- Fig 3 : output of Gaussian Naive Bayes
+
+### Decision Tree: 
+
+![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/c3ec8ba0-29aa-424b-9ded-8136c93eb268)
+
+- Fig 4 : output of  Decision Tree
+
+### Support Vector Classifier:
+
+![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/93cabc97-f09b-445c-ad90-2311e4a137f9)
+
+- Fig 5 : SVM Output
+
+### 
+
+
+
+
+
+
 
 
