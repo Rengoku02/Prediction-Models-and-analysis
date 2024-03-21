@@ -6,7 +6,8 @@
 - [Dataset Used](#dataset-used)
 - [Data Preprocessing](#data-preprocessing)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- 
+- [Prediction Models](#prediction-models)
+- [Conclusion](#conclusion)
 
 
 ## Introduction
