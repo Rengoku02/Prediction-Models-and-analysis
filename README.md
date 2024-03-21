@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Dataset Used](#dataset-used)
 - [Data Preprocessing](#data-preprocessing)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - 
 
 
@@ -50,7 +50,7 @@ Cleaning, transforming, and normalizing data are all part of the preprocessing p
 
 In summary, we encoded categorical variables, separated the dataset into training and testing sets, checked for duplicate values, imputed missing values using KNNImputer, and imputed missing values using KNNImputer. These operations were required to clean the data before modeling.
 
-## Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis
 
 The goal of exploratory data analysis (EDA) is to uncover hidden patterns and relationships in large data sets. The purpose of EDA is to learn about the data and the connections between different factors. Exploratory data analysis (EDA) makes use of statistical and visual methods to sift through data and draw conclusions. Finding outliers, missing values, and other data abnormalities that might compromise the efficacy of statistical models or machine learning algorithms is a crucial part of the data analysis process.
 
