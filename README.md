@@ -1,10 +1,10 @@
 # Prediction-Models-and-analysis
 
-### INTRODUCTION
+## INTRODUCTION
 
 In this study, we will examine a dataset including information on individuals with and without diabetes that was released by the National Institute of Diabetes and Digestive and Kidney Diseases in the United States. The objective here is to use the data to decide as to whether or not a certain patient suffers from diabetes. A thorough technique including data cleaning, exploratory data analysis, feature engineering, model selection and assessment, and interpretation will be used to accomplish this aim.
 
-### Dataset Used
+## Dataset Used
 
 The "Pima Indians Diabetes Database" is the sample dataset, and it comprises details on 768 female patients of Pima Indian descent. UCI Machine Learning Repository now houses a dataset amassed by the National Institute of Diabetes and Digestive and Kidney Diseases. The purpose of this data collection is to use parameters like age, body mass index, and blood pressure to forecast the likelihood that a certain patient would acquire diabetes.
 
@@ -14,7 +14,7 @@ Outcome is a binary variable indicating whether or not the patient was diagnosed
 
 There are a total of 768 rows in the dataset, with each row representing a different patient. While the dataset as a whole has no missing values, there are a few feature columns with what seem to be impossible or missing values of 0. Since it is very improbable that a patient would have a blood pressure, skin thickness, or insulin level of 0, these values of 0 were probably utilized to represent missing data.
 
-### Data Preprocessing
+## Data Preprocessing
 
 To prepare raw data for modeling, data preprocessing is an essential part of the machine learning pipeline. In machine learning, model performance is very sensitive to the quality of the training data. To increase the quality of the insights the models produce, it is crucial to subject them to this procedure.
 Cleaning, transforming, and normalizing data are all part of the preprocessing phase. 
@@ -41,7 +41,7 @@ Cleaning, transforming, and normalizing data are all part of the preprocessing p
 
 In summary, we encoded categorical variables, separated the dataset into training and testing sets, checked for duplicate values, imputed missing values using KNNImputer, and imputed missing values using KNNImputer. These operations were required to clean the data before modeling.
 
-### Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 The goal of exploratory data analysis (EDA) is to uncover hidden patterns and relationships in large data sets. The purpose of EDA is to learn about the data and the connections between different factors. Exploratory data analysis (EDA) makes use of statistical and visual methods to sift through data and draw conclusions. Finding outliers, missing values, and other data abnormalities that might compromise the efficacy of statistical models or machine learning algorithms is a crucial part of the data analysis process.
 
@@ -96,25 +96,74 @@ model_performance(model)
 ```
 - The aforementioned code is used to compare the accuracy of 10 different diabetes categorization models. Cross-validation is used to assess the models' efficacy once they have been instantiated using the default hyperparameters.
 
-### Gaussian Naive Bayes:
+### 1.Gaussian Naive Bayes:
+
+- The accuracy of this model is often about 75%.
+- The model's ability to accurately detect positive cases, as measured by the accuracy score, is close to 61%.
+- About 79% of really positive examples are properly recognized by the model, as measured by the recall score.
+- The F1-score, a harmonic mean of the accuracy and recall scores, is about 68%.
+- The area under the receiver operating characteristic curve, which evaluates how well the model separates positive and negative examples, is close to 76 percent.
 
 ![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/ff02f1ce-369b-4274-9baf-0b000d96e084)
 
 - Fig 3 : output of Gaussian Naive Bayes
 
-### Decision Tree: 
+### 2.Decision Tree: 
+
+- With this model, we may expect an average accuracy of around 71%.
+- Precision: About 64% is the overall precision rating.
+- About 60% of the information has been recalled.
+- The F1-score is around 62%.
+- The area under the curve (ROC) for the AUC is close to 69 percent.
 
 ![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/c3ec8ba0-29aa-424b-9ded-8136c93eb268)
 
 - Fig 4 : output of  Decision Tree
 
-### Support Vector Classifier:
+### 3.Support Vector Classifier:
+
+- The SVM model has an average accuracy of around 77%.
+- Precision: The precision rating is around 66%.
+- The recall percentage is around 75%.
+- In terms of the F1-score, almost 70% is achieved.
+- The area under the curve (ROC) for this measure is around 80%.
 
 ![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/93cabc97-f09b-445c-ad90-2311e4a137f9)
 
 - Fig 5 : SVM Output
 
-### 
+### 4.Random Forest:
+
+- In terms of accuracy, the random forest model gets close to 76% on average.
+- Precision: The precision rating is around 67%.
+- About 71% of information has been recalled.
+- As for the F1-score, it hovers around 69%.
+- In terms of ROC AUC, the score is close to 81%.
+
+![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/4a565644-09c1-4c1f-a096-729d55ab67bf)
+
+- Fig 6 : Random Forest output
+
+### 5.Logistic Regression:
+
+- The overall accuracy of the logistic regression model is close to 76%.
+- Precision: The precision rating is around 66%.
+- About 73% of the information has been recalled.
+- As for the F1-score, it comes in at about 69%.
+- The area under the curve (ROC) for the AUC is about 82%.
+
+![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/67120248-ad91-4f49-b73a-5d1c4557cf1b)
+
+Fig 7 : output of  Logistic Regression
+
+In terms of accuracy, precision, recall, F1-score, and ROC AUC, the findings show that ensemble-based models such as Random Forest and Gradient Boosting perform better than the other models. These models are superior in their ability to forecast outcomes because they can identify subtleties in the data. The most precise results are obtained by XGBoost among the ensemble models, followed by LightGBM and CatBoost. Overall, the performance of these models is rather high, hence it is encouraged that they be investigated and optimised further.
+
+It's worth noting that the models' efficacy may change based on the data and the task at hand. Therefore, it is recommended to try out several models, hyperparameter tweaking, and extra feature engineering methods to further improve the performance of the selected model.
+
+## Conclusion
+
+To sum up, the process for diabetes prediction presented in this research is thorough and well-organized. Preprocessing data, doing exploratory data analysis, developing features, training and evaluating models, and interpreting results are all included. When numerous machine learning algorithms are used, consumers are able to compare and contrast all of the available options and choose the one that works best for them. This article is useful for both novice and experienced practitioners in the fields of machine learning and healthcare analytics since it provides easy-to-understand explanations, code samples, and visualisations.
+
 
 
 
