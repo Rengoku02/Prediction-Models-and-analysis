@@ -4,8 +4,8 @@
 
 - [Introduction](#introduction)
 - [Dataset Used](#dataset-used)
-- [Data Preprocessing](data-preprocessing)
-- [Exploratory Data Analysis (EDA)](exploratory-data-analysis-(eda))
+- [Data Preprocessing](#data-preprocessing)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
 - 
 
 
