@@ -43,5 +43,42 @@ In summary, we encoded categorical variables, separated the dataset into trainin
 
 ### Exploratory Data Analysis (EDA)
 
+The goal of exploratory data analysis (EDA) is to uncover hidden patterns and relationships in large data sets. The purpose of EDA is to learn about the data and the connections between different factors. Exploratory data analysis (EDA) makes use of statistical and visual methods to sift through data and draw conclusions. Finding outliers, missing values, and other data abnormalities that might compromise the efficacy of statistical models or machine learning algorithms is a crucial part of the data analysis process.
+
+The first step in EDA is often a visual examination of the data in the form of graphs and charts. Common methods of data visualisation include histograms, scatter plots, box plots, and heat maps. A variable's distribution may be visualized using various graphs and charts, such as histograms, scatter plots, box plots, and heat maps, to name a few.
+Next, summary statistics like mean, median, mode, standard deviation, and variance are computed based on the data that has been shown. Using these metrics, you can get a feel for the data as a whole and see any outliers or unexpected readings more easily.
+Finding patterns and correlations between variables is the next stage in EDA. To investigate the connection between two variables, correlation analysis is often used. How closely two variables are linked is quantified using a correlation study. A perfect positive connection is represented by a correlation value of 1, while a perfect negative relationship is represented by a correlation coefficient of -1. There is no connection between the variables if the correlation coefficient is 0.
+
+Regression analysis is another vital tool in EDA. A dependent variable's connection with one or more independent variables may be investigated through regression analysis. One typical method for doing this is linear regression. A straight line is used to fit the data, and the strength of the link between the variables is calculated.
+Finding and dealing with outliers and missing data is another part of EDA. A data set may have "missing values" if a certain value is not there. You may deal with them in one of two ways: either throw out the rows that include them or fill in the blanks with an estimate. Values that are very out of line with the rest of the data set are known as outliers. Statistical methods may be used to locate them, and then they can be eliminated or transformed.
+
+```python
+colors = ['#76EEC6','#E3CF57','#458B74','#00FFFF']
+fig = go.Figure(data=go.Splom(dimensions=[dict(label=col,
+                                               values=df[col]) for col in 
+                                          df[num_cols].select_dtypes(include = ['int', 'float']).columns
+                                         ],
+                showupperhalf = True, 
+                text = df['Outcome'],
+                marker = dict(color = [colors[i] for i in df['Outcome']. \
+                                     astype('category').cat.codes],
+                            showscale = False,
+                            opacity = 0.65)
+                             )
+               )
+fig.update_layout(title = {'text': 'Pairwise Relationships by Outcome',
+                          'xanchor': 'center',
+                          'yanchor': 'top',
+                          'x': 0.5,
+                          'y': 0.95},
+                  width = 950,
+                  height = 950,
+                  template = 'plotly_dark')
+iplot(fig)
+```
+- Fig 2 : The code above generates a scatter plot matrix (SPLOM) for the diabetes dataset to display the correlations between the numerical variables in terms of the outcome variable.
+
+![image](https://github.com/Rengoku02/Prediction-Models-and-analysis/assets/103886191/5dc61528-2394-4eed-a879-9385c255872b)
+
 
 
